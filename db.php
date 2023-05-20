@@ -1,4 +1,10 @@
 <?php
+// Requirements
+require_once __DIR__ . "/Models/Product.php";
+require_once __DIR__ . "/Models/Category.php";
+require_once __DIR__ . "/Models/Food.php";
+require_once __DIR__ . "/Models/Toy.php";
+
 // Categories
 $cat_category = new Category("cat", "fa-solid fa-cat");
 $dog_category = new Category("dog", "fa-solid fa-dog");
@@ -15,4 +21,8 @@ $products = [
     $food_pellets,
     $food_bones
 ];
-?>
+
+$categories = [
+    $cat_category,
+    $dog_category
+];
