@@ -9,10 +9,12 @@
 
 <?php
 require_once __DIR__ . "/Models/Category.php";
+require_once __DIR__ . "/Models/Product.php";
+require_once __DIR__ . "/Models/Food.php";
 
-$kiwibird_category = new Category("kiwibird", "fa-solid fa-kiwi-bird");
+$cat_category = new Category("cat", "fa-solid fa-cat");
 $dog_category = new Category("dog", "fa-solid fa-dog");
-
+$food_product = new Food("bones", $dog_category, 8.50, "21/06/2024");
 
 ?>
 
@@ -31,7 +33,8 @@ $dog_category = new Category("dog", "fa-solid fa-dog");
 <body>
     <div id="page">
         <h1>TEST</h1>
-        <h4><?php var_dump($dog_category); ?></h4>
+        <h4><?php var_dump($cat_category); ?></h4>
+        <h4><?php var_dump($food_product); ?></h4>
 
     </div>
 </body>
