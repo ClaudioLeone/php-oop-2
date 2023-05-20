@@ -6,12 +6,12 @@
 
 :root {
     --bs-blue: #0d6efd;
-    --ms-background: #ddc8dd;
-    --title-pet-clr: #223722;
+    --ms-background: #e1d4fc;
+    --title-pet-clr: #6a0e0e;
     --card-bg-clr: #d4ecf4;
 }
 
-.lime {
+.pet-clr {
     color: var(--title-pet-clr);
 }
 
@@ -44,4 +44,21 @@ h1 {
 
 .ms-card:hover {
     border: 1px solid grey;
+}
+
+.purchase-btn {
+    width: 100%;
+}
+
+.ms-button {
+    border-radius: 15px;
+    padding: 0.5rem 2rem;
+    background-color: #2ac51f;
+    border: 1px solid #5cff50;
+}
+
+.ms-button:hover {
+    border: 1px solid #40db35fa;
+    background-color: #50ff62b1;
+    text-shadow: 1px 1px green;
 }

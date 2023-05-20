@@ -6,8 +6,8 @@ require_once __DIR__ . "/Models/Food.php";
 require_once __DIR__ . "/Models/Toy.php";
 
 // Categories
-$cat_category = new Category("cat", "fa-solid fa-cat");
-$dog_category = new Category("dog", "fa-solid fa-dog");
+$cat_category = new Category("cat", "fa-solid fa-cat" ,"bg-info");
+$dog_category = new Category("dog", "fa-solid fa-dog", "bg-primary");
 
 // Products
 $food_bones = new Food("Bones", $dog_category, 8.50, "none", "2025-06-21");
