@@ -16,19 +16,24 @@
 }
 
 body {
-    background-color: var(--ms-background);
+    background-image: url(../Imgs/animals-bg.jpg);
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.bold {
+    font-weight: 700;
 }
 
 #page {
-    overflow-y: auto;
-    width: 100vw;
-    height: 100vh;
+    background-color: #33754526;
 }
 
 #title {
+    cursor: pointer;
     color: var(--bs-blue);
-    text-shadow: 1px 2px black;
-    margin: 25px 0;
+    text-shadow: 0 3px 3px black;
+    padding: 25px 0;
 }
 
 h1 {
@@ -40,10 +45,25 @@ h1 {
     background-color: var(--card-bg-clr);
     cursor: pointer;
     width: calc(100% / 2 - 30px);
+    transition: all 0.2s ease-out;
 }
 
 .ms-card:hover {
     border: 1px solid grey;
+    box-shadow: 0 4px 4px 1px #00000080;
+    transform: translateY(-4px);
+}
+
+.food-badge {
+    padding: 5px 10px;
+    background-color: coral;
+    color: white;
+}
+
+.toy-badge {
+    padding: 5px 10px;
+    background-color: #d1942a;
+    color: white;
 }
 
 .purchase-btn {
@@ -59,6 +79,6 @@ h1 {
 
 .ms-button:hover {
     border: 1px solid #40db35fa;
-    background-color: #50ff62b1;
+    background-color: #50ff62f0;
     text-shadow: 1px 1px green;
 }
