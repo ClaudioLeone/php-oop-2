@@ -27,6 +27,7 @@ body {
 
 #page {
     background-color: #33754526;
+    height: 100vh;
 }
 
 #title {
@@ -44,7 +45,7 @@ h1 {
 .ms-card{
     background-color: var(--card-bg-clr);
     cursor: pointer;
-    width: calc(100% / 2 - 30px);
+    width: calc(100% / 4 - 10px);
     transition: all 0.2s ease-out;
 }
 
